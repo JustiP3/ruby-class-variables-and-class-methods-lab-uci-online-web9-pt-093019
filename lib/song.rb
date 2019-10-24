@@ -71,7 +71,11 @@ return unique_genres
 end
 
 def self.genre_count
-self.genres.length
+  genres_and_songs = {}
+  @@genres.each.with_index do |genre, i|
+      genres_and_songs[genre] = @@names[i]
+  end
+  return genres_and_songs
 end
 
 end # end of class
