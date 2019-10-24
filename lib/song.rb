@@ -83,4 +83,15 @@ def self.genre_count
   return genres_and_song_count
 end #end of method
 
+def self.artist_count
+  artists_and_count = {}
+  @@artists.each do |artist|
+    if nil == artists_and_count.find {|art, count| art == artist}
+      artists_and_count[artist] = 1
+    else
+      artists_and_count[artist] += 1
+    end #end of if
+    return artists_and_count
+end #end of method
+
 end # end of class
