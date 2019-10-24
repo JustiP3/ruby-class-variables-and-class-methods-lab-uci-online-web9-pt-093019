@@ -80,7 +80,7 @@ def self.genre_count
       genres_and_song_count[genre] += 1
     end # end of if
   end # end of each
-  return genre_and_song_count
+  return genres_and_song_count
 end #end of method
 
 end # end of class
