@@ -71,8 +71,7 @@ return unique_genres
 end
 
 def self.genre_count
-genres = self.genres
-binding.pry 
+self.genres.length
 end
 
 end # end of class
