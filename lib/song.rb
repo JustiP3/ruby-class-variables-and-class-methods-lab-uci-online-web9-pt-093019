@@ -73,14 +73,14 @@ end
 def self.genre_count
   genres_and_song_count = {}
 
-  @@genres.each.with_index do |genre, i|
+  @@genres.each do |genre|
     if nil == genres_and_song_count.find {|gen, count| gen == genre }
-      genres_and_songs[genre] = 1
+      genres_and_song_count[genre] = 1
     else
-      genres_and_songs[genre] += 1 
+      genres_and_song_count[genre] += 1
     end # end of if
   end # end of each
-  return genres_and_songs
+  return genre_and_song_count
 end #end of method
 
 end # end of class
