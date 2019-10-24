@@ -92,6 +92,7 @@ def self.artist_count
       artists_and_count[artist] += 1
     end #end of if
     return artists_and_count
+  end # end of do 
 end #end of method
 
 end # end of class
